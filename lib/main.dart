@@ -1,5 +1,6 @@
 import 'package:book_app/controllers/book_controller.dart';
 import 'package:book_app/views/book_list_page.dart';
+import 'package:book_app/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,11 +18,12 @@ class MyApp extends StatelessWidget {
       create: (context) => BookController(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: BookListPage(),
+        
+        // home: BookListPage(),
+        routes: {
+          '/' :(context) => SplashScreen(),
+          '/home' :(context) => BookListPage(),
+        },
       ),
     );
   }
