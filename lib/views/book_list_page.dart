@@ -75,10 +75,10 @@ class _BookListPageState extends State<BookListPage> {
                             bottom: 20,
                           ),
                           child: Text(
-                            'Popular Books',
+                            'Most Popular Books Today',
                             style: PrimaryTextStyle.copyWith(
                               fontSize: 24,
-                              fontWeight: medium,
+                              fontWeight: semiBold,
                             ),
                           ),
                         ),
@@ -161,7 +161,7 @@ class _BookListPageState extends State<BookListPage> {
                             'Catalogue Book',
                             style: PrimaryTextStyle.copyWith(
                               fontSize: 24,
-                              fontWeight: medium,
+                              fontWeight: semiBold,
                             ),
                           ),
                         ),
